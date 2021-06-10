@@ -89,7 +89,7 @@ h1, h2, h3 {
 }
 
 #hero-container a:hover {
-    color: var(--sage);
+    color: var(--magenta);
 }
 
 /* --- About --- */

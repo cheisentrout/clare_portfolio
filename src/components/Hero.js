@@ -10,7 +10,7 @@ import Fade from 'react-reveal/Fade'
 function Hero() {
   return (
       <div id="hero-container">
-        <img src="../../img/clare_snow.jpg" alt="clare" />
+        <img src="../../img/clare_snow.png" alt="clare" />
         <div id="hero-text">
             <Fade>
                 <h2>hi!</h2>

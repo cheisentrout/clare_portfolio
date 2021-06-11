@@ -13,6 +13,10 @@ function Contact() {
         <h3>get in touch</h3>
         <p>Email me, ping me, if you wanna reach me - if you wanna dm me, that's okay.</p>
         <address>cheisentrout@gmail.com</address>
+        <a href="../../img/clare-resume.pdf" target="../../img/clare-resume.pdf" className="resume">
+            <i class="fas fa-download"></i>
+            <p>my resume</p>
+        </a>
         <ul>
             <li>
                 <a href="https://www.linkedin.com/in/cheisentrout/" target="https://www.linkedin.com/in/cheisentrout/"><i class="fab fa-linkedin"></i></a>

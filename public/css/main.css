@@ -7,6 +7,8 @@
 }
 
 #root {
+    max-width: 1200px;
+    margin: auto;
     font-family: "red hat text";
     color: var(--gray);
     font-size: 16px;
@@ -30,6 +32,7 @@ h1, h2, h3 {
     position: fixed;
     top: 0;
     width: 100%;
+    max-width: 1200px;
     opacity: 90%;
 }
 
@@ -49,6 +52,16 @@ h1, h2, h3 {
     margin: 0px 10px;
 }
 
+#main-nav a {
+    color: var(--seafoam);
+    transition: .3s;
+}
+
+#main-nav a:hover {
+    color: var(--magenta);
+    text-decoration: none;
+}
+
 /* --- Hero --- */
 
 #hero-container {
@@ -61,6 +74,7 @@ h1, h2, h3 {
 }
 
 #hero-container img {
+    border: 5px solid var(--sage);
     border-radius: 60%;
     width: 50vmin;
     height: 50vmin;
@@ -68,10 +82,15 @@ h1, h2, h3 {
     min-height: 180px;
     object-fit: cover;
     object-position: left;
+    transition: 2s;
+}
+
+#hero-container img:hover {
+    border: 5px solid var(--magenta);
 }
 
 #hero-text {
-    margin: 20px auto;
+    margin: 20px;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -90,6 +109,7 @@ h1, h2, h3 {
 
 #hero-container a:hover {
     color: var(--magenta);
+    text-decoration: none;
 }
 
 /* --- About --- */
@@ -98,7 +118,8 @@ h1, h2, h3 {
     background: var(--seafoam);
     color: whitesmoke;
     box-sizing: border-box;
-    padding: 30px 5px;
+    padding: 40px 5px 30px 5px;
+    display: flex;
 }
 
 #about-text-wrapper {
@@ -106,13 +127,39 @@ h1, h2, h3 {
     margin: auto;
 }
 
+#about-container a {
+    color: var(--whitesmoke);
+    transition: .6s;
+    font-weight: bolder;
+}
+
+#about-container a:hover {
+    text-decoration: none;
+    color: #8f04585e;
+}
+
+#about-p1 {
+    margin-left: -30px;
+    border-left: 2px solid var(--sage);
+    border-bottom: 2px solid var(--sage);
+    padding-left: 20px;
+    padding-bottom: 20px;
+    align-self: flex-start;
+}
+
 #about-p2 {
-    margin-top: 40px;
+    margin-right: -30px;
     text-align: right;
+    border-right: 3px solid var(--magenta);
+    /* border-top: 2px solid var(--sage); */
+    /* padding-top: 20px; */
+    padding-right: 20px;
+    align-self: flex-end;
 }
 
 #about-p2 span {
     font-weight: bolder;
+    font-size: 1.1em;
 }
 
 /* --- Skills --- */
@@ -159,7 +206,97 @@ h1, h2, h3 {
     color: var(--magenta);
 }
 
-/* --- Container --- */
+/* --- Skills --- */
+
+#projects-container {
+    text-align: center;
+    padding: 20px;
+    background: #acb3ab1f;
+}
+
+#projects-container h3 {
+    margin-bottom: -10px;
+}
+
+#projects-container h4 {
+    color: var(--magenta);
+    margin-bottom: 20px;
+}
+
+.project-icons {
+    display: flex;
+    flex-direction: row;
+}
+
+.project-icons i {
+    margin: 0px 50px 20px 50px;
+    font-size: 1.6em;
+    color: var(--sage);
+    transition: .5s;
+}
+
+.project-icons i:hover {
+    color: var(--seafoam);
+}
+
+#outer-project-ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+#outer-project-ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0px;
+}
+
+#middle-proj {
+    border-top: 1px solid var(--sage);
+    border-bottom: 1px solid var(--sage);
+    margin: 10px auto;
+    padding: 10px 0px 30px 0px;
+}
+
+#inner-project-ul {
+    display: flex;
+    width: 100%;
+    list-style-type: circle;
+    padding-left: 0;
+    justify-content: space-around;
+}
+
+#inner-project-ul li {
+    color: var(--magenta);
+    transition: .5s;
+}
+
+#inner-project-ul li:hover {
+    transform: translateX(-5px);
+}
+
+#projects-container img {
+    /* width: 80vmin; */
+    height: 50vmin;
+    min-width: 380px;
+    min-height: 180px;
+    object-fit: cover;
+    margin: 30px auto;
+    transition: .4s;
+}
+
+#projects-container img:hover {
+    opacity: 65%;
+}
+
+#classroom-img {
+    border: 1px solid var(--sage);
+    width: 80vmin;
+    height: auto;
+    object-position: top;
+}
+
+/* --- Contact --- */
 
 #contact-container {
     background: url('../img/trans-plant.png');
@@ -179,6 +316,17 @@ h1, h2, h3 {
     color: var(--seafoam);
     margin-top: 20px;
 }
+
+#contact-container a {
+    color: var(--seafoam);
+    transition: .3s;
+}
+
+#contact-container a:hover {
+    color: var(--magenta);
+    text-decoration: none;
+}
+
 
 #contact-container ul {
     list-style: none;
@@ -206,10 +354,22 @@ h1, h2, h3 {
 
 /*================== TABLET STYLES ==================*/
 
-@media screen only and (min-width: 768px) {
+@media only screen and (min-width: 768px) {
 
-    /* --- Skills - Tablet --- */
+    /* --- Hero - Tablet --- */
 
+    #hero-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding-top: 120px;
+        padding-bottom: 35px;
+    }
+
+    #hero-text {
+        width: 40%;
+    }
 }
 
 /*================== DESKTOP STYLES ==================*/

@@ -50,6 +50,12 @@ function Skills() {
             <li>
                 <p>postgreSQL</p>
             </li>
+            <li>
+                <p>mongoDB</p>
+            </li>
+            <li>
+                <p>Node.js</p>
+            </li>
         </ul>
       </div>
   );

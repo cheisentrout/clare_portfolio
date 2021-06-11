@@ -12,7 +12,7 @@ function Hero() {
       <div id="hero-container">
         <img src="../../img/clare_snow.jpg" alt="clare" />
         <div id="hero-text">
-            <Fade left cascade>
+            <Fade>
                 <h2>hi!</h2>
                 <p>I'm Clare, a full stack web developer, educator, and musician.</p>
                 <a href="../../img/clare-resume.pdf" target="../../img/clare-resume.pdf">

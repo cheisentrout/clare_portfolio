@@ -11,11 +11,11 @@ function Nav() {
   return (
       <div>
         <nav id="main-nav">
-            <h3>CE</h3>
+            <a href="#hero-container"><h3>CE</h3></a>
             <ul>
-                <li>about</li>
-                <li>projects</li>
-                <li>contact</li>
+                <a href="#about-container"><li>about</li></a>
+                <a href="#projects-container"><li>projects</li></a>
+                <a href="#contact-container"><li>contact</li></a>
             </ul>
         </nav>
       </div>

@@ -12,7 +12,7 @@ function Projects() {
       <div id="projects-container">
       <h3>projects</h3>
         <ul id="outer-project-ul">
-            <li id="middle-proj">
+            <li>
                 <a href="http://www.farmarfinder.com/" target="http://www.farmarfinder.com/"><img src="../../img/farmar.png" alt="farmar" /></a>
                 <h4>farmar</h4>
                 <div className="project-icons">
@@ -27,7 +27,7 @@ function Projects() {
                     <li>Third-party API</li>
                 </ul>
             </li>
-            <li>
+            <li id="middle-proj">
                 <a href="https://clare-project-2.herokuapp.com/" target="https://clare-project-2.herokuapp.com/"><img src="../../img/classroom.png" alt="classroom confidant" id="classroom-img"/></a>
                 <h4>Classroom Confidant</h4>
                 <div className="project-icons">
